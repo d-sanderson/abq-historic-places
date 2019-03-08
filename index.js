@@ -23,7 +23,7 @@ info.onAdd = function (map) {
 info.update = function (props) {
     this._div.innerHTML = '<h4>ABQ Historic Places </h4>' + (props ? 
         '<b>' + props.Name + '<br />'
-        + 'Registration Type:' + props.REGISTRATIONTYPE + '</b><br />'
+        + 'Registration Type: ' + props.REGISTRATIONTYPE + '</b><br />'
         : 'Hover over a Historic Place');
 };
 
