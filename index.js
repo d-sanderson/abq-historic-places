@@ -21,7 +21,7 @@ info.onAdd = function (map) {
 
 //method that we will use to update the control based on feature prop passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4>ABQ Historic Places </h4>' + (props ? 
+    this._div.innerHTML = '<h4>' + histPlaces.name + '</h4>' + (props ? 
         '<b>' + props.Name + '<br />'
         + 'Registration Type: ' + props.REGISTRATIONTYPE + '</b><br />'
         : 'Hover over a Historic Place');
@@ -51,7 +51,7 @@ function highlightFeature(e) {
     layer.setStyle({
         weight: 5,
         color:'yellow',
-        dashArray: '',
+        dashArray: '3',
         fillOpacity: 0.7
 
     });
